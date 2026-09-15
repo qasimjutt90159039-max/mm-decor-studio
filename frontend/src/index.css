@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #120309;
+    color: #E9DFD2;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #120309;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #241018;
+    border: 1px solid rgba(201, 171, 129, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C9AB81;
+  }
+}
+
+/* Editorial styling utilities */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.champagne-glow {
+  box-shadow: 0 0 35px -5px rgba(201, 171, 129, 0.15);
+}
+
+.champagne-border {
+  border-color: rgba(201, 171, 129, 0.25);
+}
+
+/* Subtle image overlay gradient */
+.editorial-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 3, 9, 0.3) 0%,
+    rgba(18, 3, 9, 0.75) 85%,
+    #120309 100%
+  );
+}
+
+.horizontal-scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+.horizontal-scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

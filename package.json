@@ -1,0 +1,12 @@
+{
+  "name": "mm-decor-studio",
+  "version": "1.0.0",
+  "description": "Full-stack website for MM Decor Studio Interior Designer & Event Planner Lahore",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "seed": "npm run seed --prefix backend"
+  }
+}
