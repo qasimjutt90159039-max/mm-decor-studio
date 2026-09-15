@@ -1,12 +1,24 @@
 {
   "name": "mm-decor-studio",
   "version": "1.0.0",
-  "description": "Full-stack website for MM Decor Studio Interior Designer & Event Planner Lahore",
+  "description": "MM Decor Studio Interior Designer & Event Planner Lahore",
+  "type": "module",
   "private": true,
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "vercel-build": "cd frontend && npm install && npm run build",
     "dev:backend": "npm run dev --prefix backend",
     "dev:frontend": "npm run dev --prefix frontend",
-    "build:frontend": "npm run build --prefix frontend",
-    "seed": "npm run seed --prefix backend"
+    "dev": "npm run dev --prefix frontend",
+    "start": "node backend/src/server.js",
+    "seed": "node backend/src/seeds/seedAdmin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
   }
 }
